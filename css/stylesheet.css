@@ -1,0 +1,473 @@
+
+body {
+	width: 80%;
+	margin: auto;
+	background-color: #C1FFF5;
+}
+
+
+#toggle{
+	display: none;
+}
+label{
+	display: none;
+	font-size: 28;
+}
+#body-flex {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#homepage-header {
+	width: 100%;
+}
+	
+#homepage-logo{
+	width: 100px;
+	height: 125px;
+}
+
+#homepage-title{
+	margin: 0px;
+	padding: 0px;
+	background-color: #B9B4FF;
+}
+
+#homepage-ondertitel{
+	margin: 0px;
+	padding: 5px;
+	background-color: #F3EFAC;
+}
+
+#homepage-navigation{
+	margin: 0px;
+	padding: 0px;
+	text-decoration: none;
+}
+
+#navigation-ul{
+	display: flex;
+	margin: 0px;
+	padding: 10px;
+	text-decoration: none;
+	list-style-type: none;
+}
+
+#navigation-li{
+	margin: 0px;
+	padding: 10px;
+}
+
+#navigation-li a:hover{
+	color: #F3ACE7;
+}
+
+#homepage-movie{
+	width: 100%;
+	height: auto;
+	border: 1px solid black;
+	flex-grow: 0;
+	flex-shrink: 0;
+}
+
+#homepage-aside{
+	flex-basis: 25%;
+	flex-grow: 0;
+	flex-shrink: 0;
+	order: 2;
+	margin: 5px;
+	padding: 5px;
+	border: 2px solid black;
+	background-color: #F3EFAC;
+}
+
+#aside-h1{
+
+}
+
+
+#homepage-article1, #homepage-article2, #homepage-article3{
+	margin: 5px;
+	padding: 10px;
+	border: 2px solid black;
+	background-color: #F3EFAC;
+}
+
+#image-article1{
+	text-align: center;
+	width: 100px;
+	float: right;
+	position: relative;
+}
+
+#image-article2{
+	text-align: center;
+	width: 100px;
+	float: right;
+	position: relative;
+}
+
+#image-article3{
+	text-align: center;
+	width: 100px;
+	float: right;
+	position: relative;
+}
+
+#cookie-flex{
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	color: #fff;
+	background-color: #fa0;
+	opacity: 50%;
+}
+
+#footer-index{
+	background-color: #F3EFAC;
+}
+
+/*----------------------------------flexbox----------------------------*/
+
+#homepage-movie{
+	flex-basis: 100%;
+	flex-grow: 1;
+	flex-shrink: 0;
+	order: 1;
+}
+	
+#homepage-aside{
+	flex-basis: 25%;
+	flex-grow: 0;
+	flex-shrink: 0;
+	order: 3;
+}
+
+#section-articles{
+	flex-basis: 70%;
+	flex-grow: 0;
+	flex-shrink: 0;
+	order: 2;
+}
+
+#section-flex{
+	display: flex;
+	flex-wrap: wrap;
+}
+/* ------------------------------------------------------------------------- */
+#toggle{
+	display: none;
+}
+label{
+	display: none;
+	font-size: 28;
+}
+
+#howsolarworks-header{
+	width: 100%;
+}
+	
+#howsolarworks-logo{
+	width: 100px;
+	height: 125px;
+}
+
+
+#howsolarworks-title{
+	margin: 0px;
+	padding: 0px;
+	background-color: #B9B4FF;
+}
+
+#howsolarworks-ondertitel{
+	margin: 0px;
+	padding: 5px;
+	background-color: #F3EFAC;
+}
+
+#howsolarworks-navigation{
+	margin: 0px;
+	padding: 0px;
+}
+
+#navigation-ul2{
+	display: flex;
+	margin: 0px;
+	padding: 10px;
+	text-decoration: none;
+	list-style-type: none;
+}
+
+#navigation-li2{
+	margin: 0px;
+	padding: 10px;
+	text-decoration: none;
+}
+
+#navigation-li a:hover{
+	color: #F3ACE7;
+}
+
+#howsolarworks-article1{
+	grid-area: One;
+	border: 1px solid black;
+	background-color: #F3EFAC;
+}
+
+#howsolarworks-article2{
+	grid-area: Two;
+	border: 1px solid black;
+	background-color: #F3EFAC;
+}	
+
+#howsolarworks-article3{
+	grid-area: Three;
+	border: 1px solid black;
+	background-color: #F3EFAC;
+}	
+
+#howsolarworks-article4{
+	grid-area: Four;
+	border: 1px solid black;
+	background-color: #F3EFAC;
+}	
+
+#howsolarworks-article5{
+	grid-area: Five;
+	border: 1px solid black;
+	background-color: #F3EFAC;
+}	
+
+#howsolarworks-article6{
+	grid-area: Six;
+	border: 1px solid black;
+	background-color: #F3EFAC;
+}	
+
+
+#aside-howsolarworks{
+	grid-area: Seven;
+	border: 2px solid black;
+	background-color: #B9B4FF;
+	display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-areas:"1 2 3"
+						"1 2 3";
+	
+						
+    grid-gap: 10px;
+}
+
+#figure-aside1{
+	grid-area: 1;
+}
+
+#figure-aside2{
+	grid-area: 2;
+}
+
+#figure-aside3{
+	grid-area: 3;
+}
+
+#cookie-grid{
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	color: #fff;
+	background-color: #fa0;
+	opacity: 50%;
+}
+
+ #section-grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-areas:"Two One Three"
+                        "Two One Three"
+                        "Five One Three"
+                        "Five One Four"
+                        "Five One Four"
+                        "Five One Four"
+                        "Five Six Six"
+						"Seven Seven Seven";
+						
+    grid-gap: 10px;
+
+}
+
+/* ------------------------------------------------------------------------- */
+
+/*------------------Tablet-size----------------------------*/
+@media only screen and (max-width: 1180px){
+	
+	/*------------------Tablet-size-Index----------------------------*/
+	
+#homepage-movie{
+	flex-basis: 100%;
+	flex-grow: 1;
+	flex-shrink: 0;
+	order: 2;
+}
+	
+#homepage-aside{
+	flex-basis: 97%;
+	flex-grow: 0;
+	flex-shrink: 0;
+	order: 1;
+}
+
+#section-articles{
+	flex-basis: 100%;
+	flex-grow: 0;
+	flex-shrink: 0;
+	order: 3;
+}
+
+#section-flex{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#figure-index1, #figure-index2, #figure-index3{
+		position: relative;
+		float: left;
+		width: 100px;
+	}
+
+#image-article1, #image-article2, #image-article3{
+	float: left;
+}
+	
+/*------------------Tablet-size-Howsolarworks----------------------------*/
+
+#aside-howsolarworks{
+	grid-area: Seven;
+    grid-template-columns: auto auto;
+    grid-template-areas:"1 2"
+						"1 2";
+}
+
+
+#howsolarworks-article1{
+	grid-area: One;
+	border: 1px solid black;
+	background-color: #F3EFAC;
+}
+
+#howsolarworks-article2{
+	grid-area: Two;
+	border: 1px solid black;
+	background-color: #F3EFAC;
+}	
+
+#howsolarworks-article3{
+	grid-area: Three;
+	border: 1px solid black;
+	background-color: #F3EFAC;
+}	
+
+#howsolarworks-article4{
+	display: none;
+}
+
+#howsolarworks-article5{
+	grid-area: Five;
+	border: 1px solid black;
+	background-color: #F3EFAC;
+}	
+
+#howsolarworks-article6{
+	grid-area: Six;
+	border: 1px solid black;
+	background-color: #F3EFAC;
+}	
+
+#figure-howsolarworks3{
+	display: none;
+}
+
+#section-grid{
+    grid-template-columns: auto auto;
+    grid-template-areas:
+	"One Two"
+    "One Two"
+    "Three Two"                   
+	"Three Five"	
+    "Three Five"
+    "Three Five"
+    "Six, Six"
+	"Six, Six"
+	"Seven Seven"
+	"Seven Seven"; 
+}
+
+}	
+
+/*------------------Phone-size------------------------------*/
+@media only screen and (max-width: 480px){
+	/*------------------Phone-size index------------------------------*/
+	label {
+		display: block;
+		cursor: pointer;
+		float: right;
+	}
+	
+	#homepage-navigation {
+		text-align: center;
+		width: 100%;
+	}
+
+	#navigation-ul{
+		display: block;
+		display: none;
+		text-decoration: none;
+	}
+	
+	#figure-index1, #figure-index2, #figure-index3{
+		position: relative;
+		bottom: 0;
+	}
+	
+	#toggle:checked + #navigation-ul{
+		display: block;
+	}
+	
+	/*------------------Phone-size howsolarworks------------------------------*/
+	#howsolarworks-article3{
+		display: none;
+	}
+	
+	#figure-howsolarworks3{
+	grid-area: 3;
+	}
+	
+	#aside-howsolarworks{
+	grid-area: Seven;
+    grid-template-columns: auto auto;
+    grid-template-areas:"1 1"
+						"1 1"
+						"2 2"
+						"3 3";
+}
+
+	#section-grid{
+	grid-template-areas: auto auto;
+        "Five Five"
+        "Five Five"
+        "Five Five"
+        "Three Three"
+        "Three Three"
+        "Three Three"
+        "Two Two"
+        "Two Two"
+        "Two Two"
+        "One One"
+        "One One"
+        "One One"
+		"Seven Seven"
+		"Seven Seven"
+		"Seven Seven"
+		"Seven Seven";
+    }
+
+}
